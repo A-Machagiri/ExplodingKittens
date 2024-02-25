@@ -1,0 +1,38 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60vh; /* Adjust height as needed */
+  }
+  
+  form {
+    background-color: rgb(10, 47, 78);
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  input[type='text'],
+  input[type='password'],
+  input[type='submit'] {
+    width: 100%;
+    /* height: inherit; */
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type='submit'] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type='submit']:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional styling can be added as needed */
+  

@@ -1,0 +1,117 @@
+body {
+  background-image: url('./bg.avif');
+}
+
+.Card-Container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leardb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.leardb button {
+  background-color: #ffcc00;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.leardb button:hover {
+  background-color: #ffdb4d;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 10px;
+  perspective: 1000px;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(14, 141, 98);
+  margin: 5px;
+}
+
+.card button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.win-message {
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  /* Defines the depth of the 3D space */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  /* Smooth transition effect */
+  transform-style: preserve-3d;
+  /* Ensures that child elements are rendered in 3D space */
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+  /* Rotates the card 180 degrees along the Y-axis when flipped */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  /* Hides the back side of the card when flipped */
+}
+
+.card-front {
+  background-color: #ccc;
+  /* Front side color */
+}
+
+.card-back {
+  background-color: #ddd;
+  /* Back side color */
+  transform: rotateY(180deg);
+  /* Rotates the back side initially so it's hidden */
+}
+
+.ele {
+  text-align: center;
+  background-color: #ffff;
+}
