@@ -15,4 +15,3 @@ Backend Run Command : go run main.go start_handler.go leaderboard_handler.go lea
 
 Go version:go 1.22.0
 
-GitHub Repositories:
