@@ -1,15 +1,20 @@
 # ExplodingKittens
 
 The main file in frontend : App.js
+
 The main file in Backend : main.go
+
 
 Frontend:
 
 Importing nodemodules : npm i --legacy-peer-deps
+
 Frontend Run Command : npm start
 
 React version : 18.2.0
+
 Node versoin :16.18.0
+
 
 Backend:
 
