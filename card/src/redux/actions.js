@@ -1,4 +1,0 @@
-export const GAME_WON = "GAME_WON";
-export const GAME_LOST = "GAME_LOST";
-export const CLICK_ELEMENT = "CLICK_ELEMENT";
-export const INITIALIZE_ELEMENTS = "INITIALIZE_ELEMENTS";
